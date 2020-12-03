@@ -11,11 +11,6 @@ class Password:
         self.letter = reg_exp.group(3)
         self.password = reg_exp.group(4)
 
-    @property
-    def is_valid_sled_rental(self):
-        count = self.password.count(self.letter)
-        return (count >= self.min) & (count <= self.max)
-
     def is_valid(self, old_policy=True):
         if old_policy:
             count = self.password.count(self.letter)

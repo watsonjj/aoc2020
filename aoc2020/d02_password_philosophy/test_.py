@@ -46,21 +46,11 @@ def test_count_number_valid_passwords():
     assert count_number_valid(passwords, old_policy=False) == 1
 
 
-def test_example_answer1():
+def test_answers():
     example = AnswerD02(get_example(__file__))
     assert example.answer1 == 2
-
-
-def test_example_answer2():
-    example = AnswerD02(get_example(__file__))
     assert example.answer2 == 1
 
-
-def test_answer1():
     input_ = AnswerD02(get_input(__file__))
     assert input_.answer1 == 564
-
-
-def test_answer2():
-    input_ = AnswerD02(get_input(__file__))
     assert input_.answer2 == 325

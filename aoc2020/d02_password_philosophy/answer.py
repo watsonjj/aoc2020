@@ -1,6 +1,5 @@
 from aoc2020.answer import Answer
 from aoc2020.d02_password_philosophy import Password, count_number_valid
-import numpy as np
 
 
 class AnswerD02(Answer):
