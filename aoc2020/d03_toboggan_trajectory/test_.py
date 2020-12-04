@@ -1,11 +1,11 @@
-from aoc2020 import get_example, get_input
+from aoc2020 import get_input
 from aoc2020.d03_toboggan_trajectory import AnswerD03, Slope
 import numpy as np
 import pytest
 
 
 def test_read_input():
-    example = AnswerD03(get_example(__file__))
+    example = AnswerD03(get_input(__file__, "example.txt"))
     assert example.input.shape == (11, 11)
     assert example.input.dtype == bool
 
@@ -40,10 +40,10 @@ def test_count_tree_until_bottom():
 
 
 def test_answers():
-    example = AnswerD03(get_example(__file__))
+    example = AnswerD03(get_input(__file__, "example.txt"))
     assert example.answer1 == 7
     assert example.answer2 == 336
 
-    input_ = AnswerD03(get_input(__file__))
+    input_ = AnswerD03(get_input(__file__, "input.txt"))
     assert input_.answer1 == 195
     assert input_.answer2 == 3772314000

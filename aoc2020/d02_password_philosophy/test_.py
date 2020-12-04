@@ -1,4 +1,4 @@
-from aoc2020 import get_example, get_input
+from aoc2020 import get_input
 from aoc2020.d02_password_philosophy import AnswerD02, Password, count_number_valid
 
 
@@ -47,10 +47,10 @@ def test_count_number_valid_passwords():
 
 
 def test_answers():
-    example = AnswerD02(get_example(__file__))
+    example = AnswerD02(get_input(__file__, "example.txt"))
     assert example.answer1 == 2
     assert example.answer2 == 1
 
-    input_ = AnswerD02(get_input(__file__))
+    input_ = AnswerD02(get_input(__file__, "input.txt"))
     assert input_.answer1 == 564
     assert input_.answer2 == 325

@@ -1,4 +1,4 @@
-from aoc2020 import get_example, get_input
+from aoc2020 import get_input
 from aoc2020.d01_report_repair import sum_pair_equals, sum_triad_equals, AnswerD01
 import numpy as np
 
@@ -20,10 +20,10 @@ def test_sum_triad_equals():
 
 
 def test_answers():
-    example = AnswerD01(get_example(__file__))
+    example = AnswerD01(get_input(__file__, "example.txt"))
     assert example.answer1 == 514579
     assert example.answer2 == 241861950
 
-    input_ = AnswerD01(get_input(__file__))
+    input_ = AnswerD01(get_input(__file__, "input.txt"))
     assert input_.answer1 == 913824
     assert input_.answer2 == 240889536

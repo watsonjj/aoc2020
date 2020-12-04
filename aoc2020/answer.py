@@ -1,14 +1,9 @@
 from abc import ABCMeta, abstractmethod
 from pathlib import Path
-import sys
 
 
-def get_example(file):
-    return Path(file).parent / "example.txt"
-
-
-def get_input(file):
-    return Path(file).parent / "input.txt"
+def get_input(file, name):
+    return Path(file).parent / name
 
 
 class Answer(metaclass=ABCMeta):
